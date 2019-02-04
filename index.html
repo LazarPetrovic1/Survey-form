@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ready_Kali_Hunter?"><!-- Dodal sam Butstrep! -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <meta charset="utf-8">
+    <title>Survey form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey form</h1>
+    </header>
+    <br>
+    <div id="form-wrapper">
+      <p id="question">How can we improve?</p>
+      <form id="survey-form" action="index.html" method="post">
+        <label id="name-label" for="name">Name:</label><input type="text" id="name" placeholder="Name" required>
+        <label id="email-label" for="email">E-Mail:</label><input type="email" id="email" placeholder="E-Mail" required>
+        <label id="number-label" for="number">Age:</label><input type="number" id="number" placeholder="Age" min="1" max="150">
+        <p id="q2">Which best describes your current role?</p>
+        <select name="societal-role" id="s1">
+          <option value="student">Student</option>
+          <option value="full-time-learner">Full time learner</option>
+          <option value="full-time-job">Full time job</option>
+          <option value="unknown">Prefer not to say</option>
+          <option value="na">Other</option>
+        </select>
+        <p id="q3">How likely is it you would recommend our services?</p>
+        <div id="radio-buttons">
+          <label><input type="radio" name="recommend" value="Definitely" class="radio"> Definitely</label><br>
+          <label><input type="radio" name="recommend" value="Maybe" class="radio"> Maybe</label><br>
+          <label><input type="radio" name="recommend" value="Not really" class="radio"> Not really</label>
+        </div>
+        <p id="q4">What do you most like about our services?</p>
+        <select name="likes" id="s2">
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="open-source">Open source</option>
+        </select>
+        <p id="q5">Things that should be improved in the future<br>(Check all that apply)</p>
+        <div id="checkboxes">
+          <label><input type="checkbox" name="front-end" value="front-end-projects"> Front-End Projects</label><br>
+          <label><input type="checkbox" name="back-end" value="back-end-projects"> Back-End Projects</label><br>
+          <label><input type="checkbox" name="data-vis" value="data-visualization"> Data visualization</label><br>
+          <label><input type="checkbox" name="challenges" value="challenges"> Challenges</label><br>
+          <label><input type="checkbox" name="videos" value="videos"> Videos</label><br>
+          <label><input type="checkbox" name="wiki" value="wiki"> Wiki</label>
+        </div>
+        <p id="q6">Do you have any additional comments?</p>
+        <textarea name="comments" rows="8" cols="80">Tell us how we can improve. Your feedback is invaluable to us!</textarea>
+        <button type="submit" id="submit" name="button">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
